@@ -27,5 +27,11 @@ namespace reviewExercises
             const int Plus = 32;
             return temperature * Multiplier / Divider + Plus;
         }
+
+        public static double CelsiusToKelvin(double temperature)
+        {
+            const float Plus = 273.15f;
+            return temperature + Plus;
+        }
     }
 }
