@@ -39,5 +39,13 @@ namespace reviewExercises
             const float Minus = 273.15f;
             return temperature - Minus;
         }
+
+        public static double ShowDiscount(double price, double discountedPrice)
+        {
+            double discount;
+            discount = discountedPrice / price * 100;
+            discount = 100-discount;
+            return discount;
+        }
     }
 }
