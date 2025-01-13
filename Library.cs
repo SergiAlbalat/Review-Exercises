@@ -1,5 +1,5 @@
 ﻿using System;
-namespace reviewexErcises
+namespace reviewExercises
 {
     public class MyMethods
     {   
@@ -12,6 +12,12 @@ namespace reviewexErcises
             seconds = seconds - minutes * 60;
             string Msg1 = $"The result is {hours} hours, {minutes} minutes, {seconds} seconds";
             return Msg1;
+        }
+
+        public static int TriangleArea(int width, int height)
+        {
+            const int Divider = 2;
+            return width * height / Divider;
         }
     }
 }
