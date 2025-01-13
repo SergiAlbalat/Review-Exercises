@@ -5,17 +5,16 @@ namespace reviewExercises
     {
         public static void Main()
         {
-            const string Msg1 = "Write the width and height of a triangle and i will calculate it's area:";
-            const string Msg2 = "The area of the triangle it's: {0}";
+            const string Msg1 = "Write a celsius temperature and i will turn it to farenheit:";
+            const string Msg2 = "The farenheit temperature it's: {0}";
             const string MsgError = "The format of the number is incorrect";
-            int width, height, area;
+            double temperature;
             Console.WriteLine(Msg1);
             try
             {
-                width = int.Parse(Console.ReadLine());
-                height = int.Parse(Console.ReadLine());
-                area = MyMethods.TriangleArea(width, height);
-                Console.WriteLine(Msg2, area);
+                temperature = double.Parse(Console.ReadLine());
+                temperature = MyMethods.CelsiusToFarenheit(temperature);
+                Console.WriteLine(Msg2, temperature);
             }catch(FormatException)
             {
                 Console.WriteLine(MsgError);
