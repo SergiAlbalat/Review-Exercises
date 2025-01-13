@@ -33,5 +33,11 @@ namespace reviewExercises
             const float Plus = 273.15f;
             return temperature + Plus;
         }
+
+        public static double KelvinToCelsius(double temperature)
+        {
+            const float Minus = 273.15f;
+            return temperature - Minus;
+        }
     }
 }
