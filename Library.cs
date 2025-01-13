@@ -19,5 +19,13 @@ namespace reviewExercises
             const int Divider = 2;
             return width * height / Divider;
         }
+
+        public static double CelsiusToFarenheit(double temperature)
+        {
+            const int Multiplier = 9;
+            const int Divider = 5;
+            const int Plus = 32;
+            return temperature * Multiplier / Divider + Plus;
+        }
     }
 }
